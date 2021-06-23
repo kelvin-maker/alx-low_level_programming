@@ -6,14 +6,14 @@
  */
 int main(void)
 {
-  char str[] = "Holberton";
-  int i = 0;
+char str[] = "Holberton";
+int i = 0;
 
-  while (i < 9)
+while (i < 9)
     {
-      _putchar(str[i]);
-      i++;
+_putchar(str[i]);
+i++;
     }
-  _putchar('\n');
-  return (0);
+_putchar('\n');
+return (0);
 }
