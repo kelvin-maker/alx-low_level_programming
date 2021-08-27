@@ -1,8 +1,12 @@
 #include <stdio.h>
-
 /**
- *prints all base 16 numbers 
- */
+* main - Entry point
+*
+*prints all base 16 numbers
+*
+*Return: Always 0 (Success)
+* 
+*/
 
 int main(void)
 {

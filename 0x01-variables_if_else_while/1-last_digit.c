@@ -2,8 +2,12 @@
 #include <time.h>
 #include <stdio.h>
 /**
+ *main - Entry point
+ *
  * main -Checks if the last digit of a random number is greater than 5,
  * equal to 0, or lesser than 6 and it is not 0.
+ *
+ *Return: Always 0 (Success)
  */
 int main(void)
 {

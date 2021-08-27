@@ -3,8 +3,13 @@
 #include <stdio.h>
 
 /**
- * main - Checks and prints when a random number is
+ *main - Entry point
+ *
+ * Checks and prints when a random number is
  * positie
+ *
+ *Return: Always 0 (Success)
+ *
  */
 int main(void)
 {

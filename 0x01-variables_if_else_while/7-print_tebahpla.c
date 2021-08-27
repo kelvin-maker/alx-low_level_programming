@@ -1,7 +1,12 @@
 #include <stdio.h>
 
 /**
+ *
+ *main - Entry point
+ *
  *prints alphabet in reverse
+ *
+ *Return: Always 0 (Success)
 */
 
 int main(void)

@@ -1,7 +1,12 @@
 #include <stdio.h>
 
 /**
+ *main - Entry point
+ *
+ *
  *Prints alphabet in lower and upper case using putchar
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)

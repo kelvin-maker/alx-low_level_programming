@@ -1,7 +1,10 @@
 #include <stdio.h>
-
 /**
- *prints allsingle numbers digits combination
+ * main - Entry point
+ *
+ * prints allsingle numbers digits combination
+ *
+ *Return: Always 0 (Success)
  */
 
 int main(void)
