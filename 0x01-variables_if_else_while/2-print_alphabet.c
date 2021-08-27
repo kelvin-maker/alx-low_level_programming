@@ -1,6 +1,10 @@
 #include <stdio.h>
 /**
-Prints lowercase alphabets with putchar
+ *main - Entry point
+ *
+ *Prints lowercase alphabets with putchar
+ *
+ *Return: Always 0 (Success)
 */
 int main(void)
 {
