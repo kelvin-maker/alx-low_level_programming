@@ -11,9 +11,9 @@ int i = 0;
 
 while (i < 9)
     {
-__putchar(str[i]);
+_putchar(str[i]);
 i++;
     }
-__putchar('\n');
+_putchar('\n');
 return (0);
 }
