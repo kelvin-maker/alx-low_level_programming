@@ -7,7 +7,7 @@
  *return: Always 0.
  */
 int main() {
-int _isupper(int c)
+  int _isupper(int c);
 {
 if (c >= 65 && c <= 90)
 {
