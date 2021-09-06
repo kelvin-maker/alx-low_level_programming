@@ -20,8 +20,7 @@ while (*(src + len))
 
 if (src + len < dest || dest + len < src)
 {
-do
-{
+do{
 *(dest + pos++) = *src++;
 } while (len--);
 }

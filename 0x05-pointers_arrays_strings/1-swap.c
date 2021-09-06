@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
- *swaps the values of two integers
- *@a: pointer to an integer to swap
- *@b: pointer to an integer to swap
+ * swap_int - swap the values of two integers
+ * @a: pointer to an integer to swap
+ * @b: pointer to an integer to swap
  *
- *return: void
+ * Return: void
  */
-
 void swap_int(int *a, int *b)
 {
 if (a && b)
@@ -17,4 +16,3 @@ if (a && b)
 *a ^= *b;
 }
 }
-
