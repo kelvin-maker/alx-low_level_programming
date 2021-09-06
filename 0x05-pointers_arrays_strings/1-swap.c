@@ -2,7 +2,8 @@
 
 /**
  *swaps the values of two integers
- *
+ *@a: pointer to an integer to swap
+ *@b: pointer to an integer to swap
  *
  *return: void
  */
