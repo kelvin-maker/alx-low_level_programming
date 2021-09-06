@@ -7,11 +7,13 @@
  *return: void
  */
 
-void swap_int(int *a, int *b){
-if (a){
-*a = *b;
+void swap_int(int *a, int *b)
+{
+if (a && b)
+{
+*a ^= *b;
+*b ^= *a;
+*a ^= *b;
+}
+}
 
-}else if (b){
-*b = *a;
-}
-}
