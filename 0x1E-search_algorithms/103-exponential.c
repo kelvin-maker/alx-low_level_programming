@@ -1,5 +1,11 @@
 #include "search_algos.h"
 
+#define PRINT_CHECKED(idx, item) \
+printf("Value checked array[%lu] = [%d]\n", (idx), (item))
+
+#define PRINT_BOUNDED(low, high) \
+printf("Value found between indexes [%lu] and [%lu]\n", (low), (high))
+
 /**
  * print_array - print the values in an array
  * @array: the array of values
@@ -30,21 +36,29 @@ printf("%d\n", array[lo++]);
  */
 static int _binary_search(int *array, size_t lo, size_t hi, int value)
 {
-size_t mid = (lo + hi) / 2;
+size_t mid;
 
-if (lo > hi)
-return (-1);
-
+while (1)
+{
 print_array(array, lo, hi);
-if (array[mid] < value)
-return (_binary_search(array, mid + 1, hi, value));
-if (array[mid] > value)
-return (_binary_search(array, lo, mid - 1, value));
+
+if (lo == hi)
+return (array[lo] == value ? (int) lo : -1);
+
+mid = (lo + hi) / 2;
+
+if (array[mid] == value)
 return (mid);
+
+if (array[mid] < value)
+lo = mid + 1;
+else
+hi = mid - 1;
+}
 }
 
 /**
- * binary_search - search for a value in a sorted array of integers
+ * exponential_search - search for a value in a sorted array of integers
  * @array: the array of values
  * @size: the number of values
  * @value: the value to locate
@@ -52,7 +66,21 @@ return (mid);
  * Return: If value is not present in array or array is NULL, return -1.
  * Otherwise, returh the first index where value is located.
  */
-int binary_search(int *array, size_t size, int value)
+int exponential_search(int *array, size_t size, int value)
 {
-return (array && size ? _binary_search(array, 0, size - 1, value) : -1);
+size_t i = 0, j = 1;
+
+if (array && size)
+{
+while (j < size && array[j] < value)
+{
+PRINT_CHECKED(j, array[j]);
+i = j, j *= 2;
+}
+if (size <= j)
+j = size - 1;
+PRINT_BOUNDED(i, j);
+return (_binary_search(array, i, j, value));
+}
+return (-1);
 }
