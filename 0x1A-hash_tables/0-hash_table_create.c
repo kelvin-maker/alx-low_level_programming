@@ -13,7 +13,7 @@ hash_table_t *ht = malloc(sizeof(*ht));
 if (ht)
 {
 ht->array = calloc(size, sizeof(*ht->array));
-if (ht->array)
+if ((*(ht)).array)
 {
 ht->size = size;
 return (ht);
