@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - prints the name of the program
  * @argc: number of arguments passed to the function
@@ -8,12 +9,15 @@
  */
 int main(int argc, char *argv[]  __attribute__((unused)))
 {
-int i = 0;
-if (argc)
-  while(i < argc)
+int multiple;
+  
+if (argc != 3)
 {
-printf("%s\n", argv[0]);
-i++ ;
+printf("Error\n");
+return (1);
 }
+ 
+multiple = atoi(argv[1]) * atoi(argv[2]);
+printf("%d\n", multiple);
 return (0);
 }
