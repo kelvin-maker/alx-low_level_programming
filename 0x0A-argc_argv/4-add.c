@@ -25,6 +25,7 @@ for (j = 1; j < argc; j++)
 if (!isdigit(*argv[j]))
 {
 printf("%s \n", "error");
+return(1);
 exit(0);
 }
 }
