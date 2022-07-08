@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[]  __attribute__((unused)))
 {
-int i = 0; 
+int i = 0;
 int sum = 0;
 int j = 0;
 if (argc == 1)
@@ -20,7 +20,7 @@ if (argc == 1)
 printf("%s \n", "0");
 
 }
-for(j=1;j<argc;j++)
+for (j = 1; j < argc; j++)
 {
 if (!isdigit(*argv[j]))
 {
@@ -28,7 +28,7 @@ printf("%s \n", "error");
 exit(0);
 }
 }
-while(i < argc)
+while (i < argc)
 {
 int arguement = atoi(argv[i]);
 sum = sum + arguement;
