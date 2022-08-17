@@ -1,19 +1,18 @@
-# Makefile for alx, version 1.0
+# Makefile for holberton, version 0.4
 
-NAME = school
+NAME = mak
 
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra -pedantic
-SRC = main.c school.c
+SRC = main.c holberton.c
 OBJ = $(patsubst %.c, %.o, $(SRC))
-HEADERS = m.h
 
 TMPFILES = *~
 
-.PHONY: all clean oclean fclean re
+RM = rm -f
 
-all: $(HEADERS) $(OBJ)
-	$(CC) $? -o $(NAME)
+all: $(OBJ)
+	$(CC) $^ -o $(NAME)
 
 clean:
 	$(RM) $(NAME) $(TMPFILES)

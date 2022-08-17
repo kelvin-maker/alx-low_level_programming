@@ -1,10 +1,10 @@
 # Makefile for holberton, version 0.4
 
-NAME = holberton
+NAME = school
 
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra -pedantic
-SRC = main.c holberton.c
+SRC = main.c school.c
 OBJ = $(patsubst %.c, %.o, $(SRC))
 
 TMPFILES = *~

@@ -1,9 +1,9 @@
-# Makefile for holberton, version 0.2
+# Makefile for ALX, version 0.2
 
-NAME = holberton
+NAME = school
 
 CC = gcc
-SRC = holberton.c main.c
+SRC = school.c main.c
 OBJ = $(patsubst %.c, %.o, $(SRC))
 
 TMPFILES = *~
