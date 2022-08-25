@@ -13,7 +13,7 @@ queue_t *queue_push(queue_t *rear, const binary_tree_t *data)
 queue_t *temp = malloc(sizeof(*temp));
 
 if (temp)
-temp->data = (binary_tree_t *) data;
+  temp->data = binary_tree_t *data;
 if (rear)
 {
 temp->next = rear->next;
